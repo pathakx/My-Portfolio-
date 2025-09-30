@@ -1,9 +1,14 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 export function Projects() {
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+
   const projects = [
     {
       title: "Medical ChatBot",
@@ -35,11 +40,19 @@ export function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-24 px-6" ref={ref}>
       <div className="container mx-auto max-w-5xl">
-        <div className="flex items-center justify-between mb-12">
+        <div
+          className={`flex items-center justify-between mb-12 transition-all duration-700 ${
+            isIntersecting ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-bold gradient-text">Projects</h2>
-          <Button variant="outline" asChild className="border-2 border-primary hover:bg-primary/10 bg-transparent">
+          <Button
+            variant="outline"
+            asChild
+            className="border-2 border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent hover:scale-105 transition-all duration-300"
+          >
             <a
               href="https://github.com/vikaspathak0911"
               target="_blank"
@@ -56,23 +69,37 @@ export function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="p-6 hover:border-primary transition-all group hover:shadow-xl hover:shadow-primary/20"
+              className={`p-6 hover:border-primary transition-all duration-500 group hover:shadow-2xl hover:shadow-primary/30 hover:scale-[1.03] ${
+                isIntersecting ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+              style={{ transitionDelay: `${200 + index * 150}ms` }}
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{project.title}</h3>
+                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
                 <span className="text-sm text-muted-foreground">{project.date}</span>
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                  <Badge
+                    key={tag}
+                    variant="secondary"
+                    className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors duration-300"
+                  >
                     {tag}
                   </Badge>
                 ))}
               </div>
               <div className="flex gap-3 pt-2">
                 {project.github && (
-                  <Button variant="outline" size="sm" asChild className="flex-1 bg-transparent">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="flex-1 bg-transparent hover:scale-105 transition-transform duration-300"
+                  >
                     <a
                       href={project.github}
                       target="_blank"
@@ -85,7 +112,11 @@ export function Projects() {
                   </Button>
                 )}
                 {project.live && (
-                  <Button size="sm" asChild className="flex-1 gradient-primary text-white">
+                  <Button
+                    size="sm"
+                    asChild
+                    className="flex-1 gradient-primary text-white hover:scale-105 transition-transform duration-300"
+                  >
                     <a
                       href={project.live}
                       target="_blank"

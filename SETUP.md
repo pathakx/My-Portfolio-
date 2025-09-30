@@ -10,7 +10,7 @@ To enable the contact form, you need to add the following environment variable:
 2. Navigate to **Settings** → **Environment Variables**
 3. Add the following variable:
    - **Name**: `RESEND_API_KEY`
-   - **Value**: `xxxxxxxxxxxxxxxxxxxxxxxxxx`
+   - **Value**: `re_aPNiVqx1_GmATwKM6Nvvei1fgLfhn83Jm`
    - **Environment**: Select all (Production, Preview, Development)
 4. Click **Save**
 5. Redeploy your project for changes to take effect
