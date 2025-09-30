@@ -42,12 +42,15 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 px-6" ref={ref}>
       <div className="container mx-auto max-w-5xl">
+        {/* Header */}
         <div
           className={`flex items-center justify-between mb-12 transition-all duration-700 ${
             isIntersecting ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text">Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold gradient-text">
+            Projects
+          </h2>
           <Button
             variant="outline"
             asChild
@@ -65,6 +68,7 @@ export function Projects() {
           </Button>
         </div>
 
+        {/* Projects grid */}
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <Card
@@ -78,27 +82,39 @@ export function Projects() {
                 <h3 className="text-xl font-semibold group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
-                <span className="text-sm text-muted-foreground">{project.date}</span>
+                <span className="text-sm text-muted-foreground">
+                  {project.date}
+                </span>
               </div>
-              <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                {project.description}
+              </p>
+
+              {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag) => (
                   <Badge
                     key={tag}
                     variant="secondary"
-                    className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors duration-300"
+                    className="
+                      bg-primary/10 text-primary border-primary/20
+                      hover:bg-primary/20 
+                      dark:bg-primary/20 dark:text-primary-foreground dark:border-primary/30
+                    "
                   >
                     {tag}
                   </Badge>
                 ))}
               </div>
+
+              {/* Buttons */}
               <div className="flex gap-3 pt-2">
                 {project.github && (
                   <Button
                     variant="outline"
                     size="sm"
                     asChild
-                    className="flex-1 bg-transparent hover:scale-105 transition-transform duration-300"
+                    className="flex-1 bg-background text-foreground hover:scale-105 transition-transform duration-300 hover:bg-accent hover:text-accent-foreground"
                   >
                     <a
                       href={project.github}
@@ -115,7 +131,7 @@ export function Projects() {
                   <Button
                     size="sm"
                     asChild
-                    className="flex-1 gradient-primary text-white hover:scale-105 transition-transform duration-300"
+                    className="flex-1 gradient-primary text-primary-foreground hover:scale-105 transition-transform duration-300"
                   >
                     <a
                       href={project.live}
