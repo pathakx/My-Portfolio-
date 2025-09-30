@@ -57,7 +57,7 @@ export function Projects() {
               border-2 
               border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent
               dark:bg-purple-600 dark:text-white dark:border-purple-600
-              dark:hover:bg-purple-700 dark:hover:text-white
+              dark:hover:bg-white dark:hover:text-purple-700
               hover:scale-105 transition-all duration-300
             "
           >
