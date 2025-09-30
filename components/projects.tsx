@@ -59,7 +59,7 @@ export function Projects() {
                   hover:text-primary-foreground text-foreground bg-transparent 
                   dark:hover:bg-white dark:hover:text-purple-700
                   hover:scale-105 transition-all duration-300"
-            "
+            
           >
             <a
               href="https://github.com/vikaspathak0911"
@@ -119,12 +119,11 @@ export function Projects() {
                     size="sm"
                     asChild
                     className="
-                        border-2 flex-1
-                        border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent
-                        dark:bg-purple-600 dark:text-white dark:border-purple-600
+                        border-2 flex-1    
+                        border-primary hover:bg-primary 
+                        hover:text-primary-foreground text-foreground bg-transparent 
                         dark:hover:bg-white dark:hover:text-purple-700
-                        hover:scale-105 transition-all duration-300
-                      "
+                        hover:scale-105 transition-all duration-300"
                   >
                     <a
                       href={project.github}
