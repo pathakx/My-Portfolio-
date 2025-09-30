@@ -20,7 +20,7 @@ To enable the contact form, you need to add the following environment variable:
 Create a `.env.local` file in the root directory and add:
 
 \`\`\`
-RESEND_API_KEY=re_aPNiVqx1_GmATwKM6Nvvei1fgLfhn83Jm
+RESEND_API_KEY=<YOUR_API_KEY>
 \`\`\`
 
 **Note**: Never commit `.env.local` to version control. It's already included in `.gitignore`.
