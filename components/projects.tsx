@@ -52,9 +52,15 @@ export function Projects() {
             Projects
           </h2>
           <Button
-            variant="outline"
             asChild
-            className="border-2 border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent hover:scale-105 transition-all duration-300"
+            className="
+              border-2 
+              bg-white text-purple-600 border-purple-600
+              hover:bg-purple-100 hover:text-purple-700
+              dark:bg-purple-600 dark:text-white dark:border-purple-600
+              dark:hover:bg-purple-700 dark:hover:text-white
+              hover:scale-105 transition-all duration-300
+            "
           >
             <a
               href="https://github.com/vikaspathak0911"
@@ -111,10 +117,16 @@ export function Projects() {
               <div className="flex gap-3 pt-2">
                 {project.github && (
                   <Button
-                    variant="outline"
                     size="sm"
                     asChild
-                    className="flex-1 bg-background text-foreground hover:scale-105 transition-transform duration-300 hover:bg-accent hover:text-accent-foreground"
+                    className="
+                      flex-1 
+                      bg-white text-purple-600 border border-purple-600
+                      hover:bg-purple-100 hover:text-purple-700
+                      dark:bg-purple-600 dark:text-white dark:border-purple-600
+                      dark:hover:bg-purple-700 dark:hover:text-white
+                      hover:scale-105 transition-transform duration-300
+                    "
                   >
                     <a
                       href={project.github}
@@ -131,7 +143,14 @@ export function Projects() {
                   <Button
                     size="sm"
                     asChild
-                    className="flex-1 gradient-primary text-primary-foreground hover:scale-105 transition-transform duration-300"
+                    className="
+                      flex-1 
+                      bg-white text-purple-600 border border-purple-600
+                      hover:bg-purple-100 hover:text-purple-700
+                      dark:bg-purple-600 dark:text-white dark:border-purple-600
+                      dark:hover:bg-purple-700 dark:hover:text-white
+                      hover:scale-105 transition-transform duration-300
+                    "
                   >
                     <a
                       href={project.live}
