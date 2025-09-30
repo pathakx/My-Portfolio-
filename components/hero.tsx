@@ -62,7 +62,11 @@ export function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent hover:scale-105 transition-all duration-300"
+                className="border-2 
+                  border-primary hover:bg-primary 
+                  hover:text-primary-foreground text-foreground bg-transparent 
+                  dark:hover:bg-white dark:hover:text-purple-700
+                  hover:scale-105 transition-all duration-300"
               >
                 <a href="#projects">View Projects</a>
               </Button>
