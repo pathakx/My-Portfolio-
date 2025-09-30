@@ -104,7 +104,7 @@ export function Projects() {
                     className="
                       bg-primary/10 text-primary border-primary/20
                       hover:bg-primary/20 
-                      dark:bg-primary/20 dark:text-primary-foreground dark:border-primary/30
+                      dark:bg-primary/20 dark:text-white dark:border-primary/30
                     "
                   >
                     {tag}
