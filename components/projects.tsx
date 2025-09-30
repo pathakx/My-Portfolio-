@@ -55,8 +55,7 @@ export function Projects() {
             asChild
             className="
               border-2 
-              bg-white text-purple-600 border-purple-600
-              hover:bg-purple-100 hover:text-purple-700
+              border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent
               dark:bg-purple-600 dark:text-white dark:border-purple-600
               dark:hover:bg-purple-700 dark:hover:text-white
               hover:scale-105 transition-all duration-300
