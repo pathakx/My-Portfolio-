@@ -119,7 +119,7 @@ export function Projects() {
                     size="sm"
                     asChild
                     className="
-                        border-2 
+                        border-2 flex-1
                         border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent
                         dark:bg-purple-600 dark:text-white dark:border-purple-600
                         dark:hover:bg-white dark:hover:text-purple-700
@@ -142,7 +142,7 @@ export function Projects() {
                     size="sm"
                     asChild
                     className="
-                        border-2 
+                        border-2 flex-1
                         border-primary hover:bg-primary hover:text-primary-foreground text-foreground bg-transparent
                         dark:bg-purple-600 dark:text-white dark:border-purple-600
                         dark:hover:bg-white dark:hover:text-purple-700
