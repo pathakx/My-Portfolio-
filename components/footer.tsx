@@ -9,7 +9,7 @@ export function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://github.com/vikaspathak0911"
+              href="https://github.com/pathakx"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
@@ -18,7 +18,7 @@ export function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/vikaspathak11"
+              href="https://linkedin.com/in/pathakx"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
@@ -27,7 +27,7 @@ export function Footer() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="https://instagram.com/_vikaspathak"
+              href="https://instagram.com/pathakx"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
