@@ -74,9 +74,9 @@ export function Hero() {
 
             <div className="flex gap-4 pt-6">
               {[
-                { href: "https://github.com/vikaspathak0911", icon: Github, label: "GitHub" },
-                { href: "https://linkedin.com/in/vikaspathak11", icon: Linkedin, label: "LinkedIn" },
-                { href: "https://instagram.com/_vikaspathak", icon: Instagram, label: "Instagram" },
+                { href: "https://github.com/pathakx", icon: Github, label: "GitHub" },
+                { href: "https://linkedin.com/in/pathak", icon: Linkedin, label: "LinkedIn" },
+                { href: "https://instagram.com/pathakx_", icon: Instagram, label: "Instagram" },
                 {
                   href: "https://mail.google.com/mail/?view=cm&fs=1&to=vikaspathak0911@gmail.com",
                   icon: Mail,
