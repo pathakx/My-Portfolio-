@@ -16,7 +16,7 @@ export function Projects() {
       description:
         "Developed an AI-powered medical chatbot using Flask, LangChain, Pinecone, and LLMs for query understanding and response generation. Implemented Docker-based containerization and deployed on AWS EC2 with automated CI/CD workflows.",
       tags: ["Flask", "LangChain", "Pinecone", "AWS", "Docker", "CI/CD"],
-      github: "https://github.com/vikaspathak0911/medical-chatbot",
+      github: "https://github.com/pathakx/medical-chatbot",
       live: null,
     },
     {
@@ -25,7 +25,7 @@ export function Projects() {
       description:
         "Developed a conversational AI agent using LangGraph, Flask, and Python to handle product recommendations and order management queries. Implemented a state machine architecture with LangGraph to create a robust and scalable conversational workflow.",
       tags: ["LangGraph", "Flask", "Python", "REST API", "State Machine"],
-      github: "https://github.com/vikaspathak0911/ai-agent-langgraph",
+      github: "https://github.com/pathakx/ai-agent-langgraph",
       live: null,
     },
     {
@@ -34,7 +34,7 @@ export function Projects() {
       description:
         "Built a Flask-based web application for facial emotion detection, enabling users to upload images and receive real-time classification across seven emotional categories. Trained ML model and integrated it to analyze uploaded images with confidence scores.",
       tags: ["Flask", "Machine Learning", "Computer Vision", "Python"],
-      github: "https://github.com/vikaspathak0911/EmotionAI",
+      github: "https://github.com/pathakx/EmotionAI",
       live: "https://emotion-ai-seven.vercel.app/",
     },
   ]
@@ -62,7 +62,7 @@ export function Projects() {
             
           >
             <a
-              href="https://github.com/vikaspathak0911"
+              href="https://github.com/pathakx"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
